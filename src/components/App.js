@@ -1,7 +1,6 @@
 
 import React, { Component, useState } from "react";
 import '../styles/App.css';
-import List from './List'
 
 class App extends Component {
   constructor(props) {
@@ -40,8 +39,8 @@ class App extends Component {
   }
 
   render() {
-     let list = this.cityList.filter((city,i) => {
-      return this.cityList.country.includes("India");
+    let list = this.cityList.filter((city,i) => {
+      return city.country.includes("India");
      })
     return (
       <div id="main">
